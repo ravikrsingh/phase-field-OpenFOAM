@@ -1,0 +1,70 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      alpha;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 0; 
+
+//============== NO-FLUX BOUNDARY CONDITIONS ====================//
+
+boundaryField
+{
+    floor
+    {
+//         type            zeroGradient;
+		type            empty;
+        //value         uniform 0;
+    }
+    ceiling
+    {
+//         type            zeroGradient;
+		type            empty;
+        //value         uniform 0;
+    }
+    sideSolid
+    {
+        type            zeroGradient;
+        //value         uniform 0;
+    }
+
+}
+
+//============== CYCLIC BOUNDARY CONDITIONS ====================//
+
+// boundaryField
+// {
+//     top
+//     {
+//         type            cyclic;
+//     }
+//     bottom
+//     {
+//         type            cyclic;
+//     }
+//     left
+//     {
+//         type            cyclic;
+//     }
+//     right
+//     {
+//         type            cyclic;
+//     }
+//     frontAndBack
+//     {
+//         type            empty;
+//     }
+// }
