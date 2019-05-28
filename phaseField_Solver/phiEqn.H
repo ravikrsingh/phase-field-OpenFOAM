@@ -17,7 +17,7 @@ alphaEqn.solve();
 volVectorField n=dimx*fvc::grad(alpha)/(1E-20+mag(dimx*fvc::grad(alpha)));
 fvScalarMatrix muEqn
 (
-         (0.5)*dimt*fvm::ddt(mu) == diff_Liq*0.5*dimx*dimx*fvm::laplacian(alpha,mu) + (c_Sol-c_Liq)* dimt*fvc::ddt(alpha)*30.0*alpha*alpha*(1.0-alpha)*(1.0-alpha)- anti_trap*(c_Sol-c_Liq)*dimx*fvc::div((n*dimt*fvc::ddt(alpha)))
+         (0.5)*dimt*fvm::ddt(mu) == diff_Liq*0.5*dimx*dimx*fvm::laplacian(alpha,mu) + (c_Sol-c_Liq)* dimt*fvc::ddt(alpha)*30.0*alpha*alpha*(1.0-alpha)*(1.0-alpha)- anti_trap*epsilon*(c_Sol-c_Liq)*dimx*fvc::div((n*dimt*fvc::ddt(alpha)))
 );
 
 muEqn.solve();
