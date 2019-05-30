@@ -22,14 +22,14 @@ m_1         m_1 [0 0 0 0 0 0 0] 0.45;
 omega       omega [0 0 0 0 0 0 0] 1.687331;
 gamma       gamma [0 0 0 0 0 0 0] 1;
 epsilon     epsilon [0 0 0 0 0 0 0] 48;
-c_Sol       c_Sol [0 0 0 0 0 0 0] 0.45;
-c_Liq       c_Liq [0 0 0 0 0 0 0] 0.56;
+c_Sol       c_Sol [0 0 0 0 0 0 0] 0.56;
+c_Liq       c_Liq [0 0 0 0 0 0 0] 0.45;
 c_eq        c_eq [0 0 0 0 0 0 0] 0.5;
 diff_Sol    diff_Sol [0 0 0 0 0 0 0] 1;
 diff_Liq    diff_Liq [0 0 0 0 0 0 0] 1;
 anti_trap   anti_trap [0 0 0 0 0 0 0] 0.35355;  //1/(2sqrt(2))
 G           G [0 0 0 0 0 0 0] 1.7e-5;
-v           v [0 0 0 0 0 0 0] 0.004;
+v           v [0 0 0 0 0 0 0] 0.001;
 noise_mag           noise_mag [0 0 0 0 0 0 0] 0.003;
 initial           initial [0 0 0 0 0 0 0] 0.93;
 T0         	 T0 [0 0 0 0 0 0 0] 1.0;
